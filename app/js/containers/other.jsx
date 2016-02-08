@@ -1,14 +1,6 @@
 'use strict';
 
 import React from 'react';
-import { connect } from 'react-redux';
-
-function mapStateToProps(state) {
-  return {
-    officers: state.officers,
-  };
-}
-
 
 class Other extends React.Component {
   constructor() {
@@ -22,5 +14,5 @@ class Other extends React.Component {
   }
 }
 
-export default connect(mapStateToProps)(Other);
+export default Other;
 

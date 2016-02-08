@@ -1,14 +1,7 @@
 'use strict';
 
 import React from 'react';
-import { connect } from 'react-redux';
 import { Link } from 'react-router';
-
-function mapStateToProps(state) {
-  return {
-    auth: state.auth,
-  };
-}
 
 class OfficersApp extends React.Component {
   constructor() {
@@ -26,4 +19,4 @@ class OfficersApp extends React.Component {
   }
 }
 
-export default connect(mapStateToProps)(OfficersApp);
+export default OfficersApp;

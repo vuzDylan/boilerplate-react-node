@@ -1,13 +1,6 @@
 'use strict';
 
 import React from 'react';
-import { connect } from 'react-redux';
-
-function mapStateToProps(state) {
-  return {
-    officers: state.officers
-  }
-}
 
 class Home extends React.Component {
   constructor() {
@@ -21,4 +14,4 @@ class Home extends React.Component {
   }
 }
 
-export default connect(mapStateToProps)(Home);
+export default Home;
