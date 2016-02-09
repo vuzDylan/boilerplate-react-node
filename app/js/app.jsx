@@ -2,14 +2,15 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import routes from './routes';
-import { Router, browserHistory } from 'react-router';
+import { Provider } from 'react-redux';
+import App from './components/App';
+import store from './store';
 
 window.onload = () => {
   ReactDOM.render(
-    <Router history={browserHistory}>
-      {routes}
-    </Router>,
+    <Provider store={store}>
+      <App />
+    </Provider>,
     document.getElementById('app')
   );
 };
