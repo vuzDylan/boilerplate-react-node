@@ -2,14 +2,17 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import routes from './routes';
+import { Router, browerHistory } from 'react-router';
 import { Provider } from 'react-redux';
-import App from './components/App';
 import store from './store';
 
 window.onload = () => {
   ReactDOM.render(
     <Provider store={store}>
-      <App />
+      <Router history={browerHistory}>
+        {routes}
+      </Router>
     </Provider>,
     document.getElementById('app')
   );
