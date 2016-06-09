@@ -32,7 +32,8 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "scripts": {
-    "start": "node ./server/app.js"
+    "start": "node ./server/app.js",
+    "bootstrap-actions": "python ./bootstrap/actions.py"
   },
   "repository": {
     "type": "git",
