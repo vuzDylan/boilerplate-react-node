@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { dismiss } from '../actions/alerts';
+import { Alert } from 'react-bootstrap';
 
 function mapStateToProps(store) {
   return {
@@ -22,6 +23,11 @@ class Alerts extends React.Component {
 
   render() {
     if (this.props.alert) {
+      return (
+        <Alert bsStyle={this.props.type} onDismiss={this.dismissAlert}>
+          <p>{this.props.alert}</p>
+        </Alert>
+      );
     } else {
       return null;
     }

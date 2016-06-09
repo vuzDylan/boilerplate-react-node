@@ -2,7 +2,7 @@ import { DISMISS } from '../actions/alerts';
 import alertTypes from '../const/alerts';
 
 const initState = {
-  alert: null,
+  alert: "swag",
   type: alertTypes.INFO,
 }
 

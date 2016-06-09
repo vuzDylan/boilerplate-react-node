@@ -1,11 +1,11 @@
-export const INFO = 'INFO';
-export const SUCCESS = 'SUCCESS';
-export const WARNING = 'WARNING';
-export const ERROR = 'ERROR';
+export const SUCCESS = 'success';
+export const INFO = 'info';
+export const WARNING = 'warning';
+export const DANGER = 'danger';
 
 export default {
   SUCCESS,
   INFO,
   WARNING,
-  ERROR,
+  DANGER,
 }
