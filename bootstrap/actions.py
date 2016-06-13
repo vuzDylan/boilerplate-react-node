@@ -28,7 +28,8 @@ if len(args) == 2:
             file.write("export function " + name + "(" + args + ") {\n")
             file.write("  return {\n")
             file.write("    type: " + action + ",\n")
-            file.write(data)
+            if val[0]:
+                file.write(data)
             file.write("  };\n")
             file.write("}\n\n")
 
