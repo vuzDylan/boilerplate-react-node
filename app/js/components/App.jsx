@@ -1,8 +1,7 @@
 'use strict';
 
 import React from 'react';
-import Alerts from '../containers/Alerts';
-
+import TopNav from '../containers/TopNav';
 
 class App extends React.Component {
   constructor() {
@@ -11,10 +10,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="container-fluid">
-          <Alerts />
-          {this.props.children}
-        </div>
+        <TopNav />
+        {this.props.children}
       </div>
     );
   }
