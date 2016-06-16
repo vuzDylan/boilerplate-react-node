@@ -16,3 +16,4 @@ Development
 Notes
 =================
 - Will not run in browser without adding reducers
+- Use HTML 5 tags in components and containers, with the exception of alerts and modals. For these, use their [react-bootstrap components](https://react-bootstrap.github.io/components.html).
