@@ -20,6 +20,7 @@
     "gulp-concat": "^2.6.0",
     "gulp-notify": "^2.2.0",
     "gulp-uglify": "^1.5.2",
+    "gulp-watch": "^4.3.6",
     "history": "^2.0.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
