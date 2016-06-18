@@ -1,13 +1,13 @@
 import React from 'react';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        {this.props.children}
-      </div>
-    );
-  }
-}
+const App = (props) => (
+  <div>
+    {props.children}
+  </div>
+);
+
+App.propTypes = {
+  initialCount: React.PropTypes.array,
+};
 
 export default App;
