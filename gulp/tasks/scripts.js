@@ -7,6 +7,7 @@ import uglify from 'gulp-uglify';
 import config from '../config';
 import handleErrors from '../util/handle-errors';
 import notify from 'gulp-notify';
+import livereload from 'gulp-livereload';
 
 gulp.task('build:scripts',  () =>  {
   let bundle = browserify({
@@ -26,5 +27,6 @@ gulp.task('build:scripts',  () =>  {
   }
   return bundle
     .pipe(gulp.dest(config.build.js))
-    .pipe(notify('Scripts done!'));
+    .pipe(notify('Scripts done!'))
+    .pipe(livereload());
 });
